@@ -57,5 +57,39 @@
     "homepage": {
         "outstanding-doctor": "Last Week's featured doctor",
         "more-info": "More Info"
+    },
+    "manage-schedule": {
+        "title": "Doctor's medical examination schedule management",
+        "choose-doctor": "Choose doctor",
+        "choose-date":"Choose date",
+        "save": "Save infor"
+    },
+    "patient": {
+        "detail-doctor":{
+            "schedule":"Schedule",
+            "no-schedule":"The doctor does not have any appointments at this time."
+        },
+        "extra-infor-doctor":{
+            "text-address":"Doctor's office address",
+            "price":"Medical examination fee",
+            "detail":"View details",
+            "payment":"Patients can pay the fees through various methods: ",
+            "hide-price":"Hide the price list"
+        }
+    },
+    "admin":{
+        "manage-doctor":{
+            "title":"Add more information about the doctor",
+            "select-doctor":"Select doctor",
+            "intro":"Introduction",
+            "add":"Create infor",
+            "save":"Save infor",
+            "price":"Price",
+            "payment":"Payment",
+            "province":"Province",
+            "nameClinic":"Clinic's name",
+            "addressClinic":"Clinic's address",
+            "note":"Note"
+        }
     }
 }

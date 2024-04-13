@@ -7,7 +7,7 @@ class HomeFooter extends Component {
     render() {
         return (
             <div className='home-footer'>
-                <p>&copy; 2021 Hỏi Dân IT với Eric. More information, please visit my youtube channel.
+                <p>&copy;  More information, please visit my youtube channel.
                     <a target="_blank" href="#"> &#8594; Click here &#8592;</a>
                 </p>
             </div>

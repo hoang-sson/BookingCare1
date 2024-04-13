@@ -88,7 +88,7 @@ class UserRedux extends Component {
     let file = data[0];
     if (file) {
       let base64 = await CommonUtils.getBase64(file)
-      console.log('hoidanit base64 image: ', base64)
+      console.log('base64 image: ', base64)
       let objectUrl = URL.createObjectURL(file)
       this.setState({
         previewImgURL: objectUrl,
@@ -201,7 +201,7 @@ class UserRedux extends Component {
 		return (
 			<div className='user-redux-container'>
 				<div className='title'>
-					Learn React-Redux với "Hỏi Dan IT" youtube channel
+					User Redux
 				</div>
 				<div className="user-redux-body" >
 					<div className='container'>
