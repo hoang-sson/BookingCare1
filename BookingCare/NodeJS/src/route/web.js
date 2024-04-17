@@ -2,6 +2,10 @@ import express from "express";
 import homeController from "../controllers/homeController";
 import userController from "../controllers/userController";
 import doctorController from "../controllers/doctorController";
+import patientContrroller from "../controllers/patientController";
+import specialtyController from "../controllers/specialtyController";
+
+
 let router = express.Router();
 
 let initWebRoutes = (app) => {
@@ -23,11 +27,17 @@ let initWebRoutes = (app) => {
   router.get("/api/top-doctor-home", doctorController.getTopDoctorHome);
   router.get("/api/top-all-doctors", doctorController.getAllDoctors);
   router.post("/api/save-infor-doctors", doctorController.postInforDoctor);
-  router.get('/api/get-detail-doctor-by-id', doctorController.getDetailDoctorById)
-  router.post('/api/bulk-create-schedule', doctorController.bulkCreateSchedule)
-  router.get('/api/get-schedule-doctor-by-date', doctorController.getScheduleByDate)
-  router.get('/api/get-extra-infor-doctor-by-id', doctorController.getExtraInforDoctorById)
+  router.get('/api/get-detail-doctor-by-id', doctorController.getDetailDoctorById);
+  router.post('/api/bulk-create-schedule', doctorController.bulkCreateSchedule);
+  router.get('/api/get-schedule-doctor-by-date', doctorController.getScheduleByDate);
+  router.get('/api/get-extra-infor-doctor-by-id', doctorController.getExtraInforDoctorById);
+  router.get('/api/get-profile-doctor-by-id', doctorController.getProfileDoctorById);
 
+  router.post('/api/patient-book-appointment', patientContrroller.postBookAppoiment);
+  router.post('/api/verify-book-appointment', patientContrroller.postVerifyBookAppoiment);
+  
+  router.post('/api/create-new-specialty', specialtyController.createSpecialty);
+  router.get("/api/get-specialty", specialtyController.getAllSpecialty);
 //   router.get("/api/get-all-doctors", doctorController.getAllDoctors);
 //   router.post("/api/save-infor-doctors", doctorController.postInforDoctor);
 
